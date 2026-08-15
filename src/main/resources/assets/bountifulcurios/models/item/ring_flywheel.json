@@ -8,7 +8,7 @@
       "predicate": {
         "bountifulcurios:charge": 0.00001
       },
-      "model": "bountifulcurios:item/ring_flywheel_frametime_4"
+      "model": "bountifulcurios:item/ring_flywheel_frametime_3"
     },
     {
       "predicate": {
@@ -26,7 +26,7 @@
       "predicate": {
         "bountifulcurios:charge": 0.5
       },
-      "model": "bountifulcurios:item/ring_flywheel_frametime_3"
+      "model": "bountifulcurios:item/ring_flywheel_frametime_4"
     }
   ]
 }
