@@ -1,6 +1,6 @@
 {
   "parent": "bountifulcurios:item/ring_flywheel",
   "textures": {
-    "layer0": "bountifulcurios:item/ring_flywheel/frametime_3"
+    "layer0": "bountifulcurios:item/ring_flywheel/frametime_4"
   }
 }
