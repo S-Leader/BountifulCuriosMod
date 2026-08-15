@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "bountifulcurios:ender_dragon_scale",
+    { "id": "quark:dragon_scale", "required": false },
+    { "id": "quark:enderdragon_scale", "required": false }
+  ]
+}

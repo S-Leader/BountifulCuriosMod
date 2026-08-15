@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "bountifulcurios:resplendent_token"
+  },
+  "base": {
+    "item": "bountifulcurios:ring_overclocking"
+  },
+  "addition": {
+    "item": "bountifulcurios:shulker_heart"
+  },
+  "result": {
+    "item": "bountifulcurios:ring_free_action"
+  }
+}

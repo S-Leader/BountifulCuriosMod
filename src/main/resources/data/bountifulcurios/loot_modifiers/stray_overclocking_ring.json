@@ -1,0 +1,17 @@
+{
+  "type": "bountifulcurios:original_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/stray"
+    },
+    {
+      "condition": "minecraft:killed_by_player"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.03
+    }
+  ],
+  "pool": "stray"
+}

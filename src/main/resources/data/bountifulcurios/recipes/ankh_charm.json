@@ -1,0 +1,110 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "botania:rune_summer"
+            },
+            {
+              "type": "forge:item_exists",
+              "item": "botania:rune_autumn"
+            },
+            {
+              "type": "forge:item_exists",
+              "item": "botania:rune_winter"
+            },
+            {
+              "type": "forge:item_exists",
+              "item": "botania:rune_spring"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "SlA",
+          "fsa",
+          "PvW"
+        ],
+        "key": {
+          "s": {
+            "item": "bountifulcurios:mixed_dragon_scale"
+          },
+          "f": {
+            "item": "bountifulcurios:ring_free_action"
+          },
+          "a": {
+            "item": "bountifulcurios:apple"
+          },
+          "v": {
+            "item": "bountifulcurios:vitamins_alpha"
+          },
+          "l": {
+            "item": "bountifulcurios:sunglasses"
+          },
+          "S": {
+            "item": "botania:rune_summer"
+          },
+          "A": {
+            "item": "botania:rune_autumn"
+          },
+          "W": {
+            "item": "botania:rune_winter"
+          },
+          "P": {
+            "item": "botania:rune_spring"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:ankh_charm"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "glg",
+          "fsa",
+          "gvg"
+        ],
+        "key": {
+          "g": {
+            "tag": "forge:ingots/gold"
+          },
+          "l": {
+            "item": "bountifulcurios:sunglasses"
+          },
+          "f": {
+            "item": "bountifulcurios:ring_free_action"
+          },
+          "s": {
+            "item": "bountifulcurios:mixed_dragon_scale"
+          },
+          "a": {
+            "item": "bountifulcurios:apple"
+          },
+          "v": {
+            "item": "bountifulcurios:vitamins_alpha"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:ankh_charm"
+        }
+      }
+    }
+  ]
+}

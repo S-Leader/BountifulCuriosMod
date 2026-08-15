@@ -1,0 +1,69 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/steel"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "scs",
+          "crc",
+          "scs"
+        ],
+        "key": {
+          "c": {
+            "tag": "forge:ingots/copper"
+          },
+          "s": {
+            "tag": "forge:ingots/steel"
+          },
+          "r": {
+            "item": "bountifulcurios:iron_ring"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:ring_flywheel"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "scs",
+          "crc",
+          "scs"
+        ],
+        "key": {
+          "c": {
+            "tag": "forge:ingots/copper"
+          },
+          "s": {
+            "tag": "forge:ingots/iron"
+          },
+          "r": {
+            "item": "bountifulcurios:iron_ring"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:ring_flywheel"
+        }
+      }
+    }
+  ]
+}

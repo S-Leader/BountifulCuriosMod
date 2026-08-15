@@ -1,0 +1,75 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "botania:rune_earth"
+            },
+            {
+              "type": "forge:item_exists",
+              "item": "botania:rune_air"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "gsg",
+          "EsA",
+          "sgs"
+        ],
+        "key": {
+          "s": {
+            "item": "bountifulcurios:spectral_silt"
+          },
+          "g": {
+            "tag": "forge:ingots/gold"
+          },
+          "E": {
+            "item": "botania:rune_earth"
+          },
+          "A": {
+            "item": "botania:rune_air"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:lucky_horseshoe"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "gsg",
+          "gsg",
+          "sgs"
+        ],
+        "key": {
+          "s": {
+            "item": "bountifulcurios:spectral_silt"
+          },
+          "g": {
+            "tag": "forge:ingots/gold"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:lucky_horseshoe"
+        }
+      }
+    }
+  ]
+}

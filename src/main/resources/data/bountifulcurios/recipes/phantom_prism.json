@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "botania"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " e ",
+          "gdg",
+          "gog"
+        ],
+        "key": {
+          "e": {
+            "item": "minecraft:ender_eye"
+          },
+          "d": {
+            "tag": "forge:gems/diamond"
+          },
+          "g": {
+            "tag": "forge:glass"
+          },
+          "o": {
+            "tag": "forge:obsidian"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:phantom_prism"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/enderium"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " s ",
+          "iri",
+          " e "
+        ],
+        "key": {
+          "i": {
+            "tag": "forge:ingots/enderium"
+          },
+          "r": {
+            "item": "bountifulcurios:ring_flywheel"
+          },
+          "s": {
+            "tag": "forge:scales/ender_dragon"
+          },
+          "e": {
+            "item": "minecraft:ender_eye"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:ring_flywheel_advanced"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " s ",
+          "iri",
+          " e "
+        ],
+        "key": {
+          "i": {
+            "item": "minecraft:ender_pearl"
+          },
+          "r": {
+            "item": "bountifulcurios:ring_flywheel"
+          },
+          "s": {
+            "tag": "forge:scales/ender_dragon"
+          },
+          "e": {
+            "item": "minecraft:ender_eye"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:ring_flywheel_advanced"
+        }
+      }
+    }
+  ]
+}

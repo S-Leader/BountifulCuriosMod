@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "sps",
+    "gdg",
+    "sps"
+  ],
+  "key": {
+    "s": {
+      "item": "bountifulcurios:spectral_silt"
+    },
+    "p": {
+      "item": "bountifulcurios:potion_recall"
+    },
+    "g": {
+      "tag": "forge:glass"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "bountifulcurios:magic_mirror"
+  }
+}

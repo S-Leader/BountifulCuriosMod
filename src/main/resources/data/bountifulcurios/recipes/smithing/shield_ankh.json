@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "bountifulcurios:resplendent_token"
+  },
+  "base": {
+    "item": "bountifulcurios:shield_obsidian"
+  },
+  "addition": {
+    "item": "bountifulcurios:ankh_charm"
+  },
+  "result": {
+    "item": "bountifulcurios:shield_ankh"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "botania:life_essence"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " e ",
+          "nbg"
+        ],
+        "key": {
+          "n": {
+            "item": "minecraft:nether_star"
+          },
+          "e": {
+            "tag": "forge:scales/ender_dragon"
+          },
+          "b": {
+            "item": "bountifulcurios:broken_black_dragon_scale"
+          },
+          "g": {
+            "item": "botania:life_essence"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:black_dragon_scale"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "n",
+          "e",
+          "b"
+        ],
+        "key": {
+          "n": {
+            "item": "minecraft:nether_star"
+          },
+          "e": {
+            "tag": "forge:scales/ender_dragon"
+          },
+          "b": {
+            "item": "bountifulcurios:broken_black_dragon_scale"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:black_dragon_scale"
+        }
+      }
+    }
+  ]
+}

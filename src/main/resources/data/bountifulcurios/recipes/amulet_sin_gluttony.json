@@ -1,0 +1,66 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "botania:rune_gluttony"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "c",
+          "a",
+          "g"
+        ],
+        "key": {
+          "c": {
+            "item": "botania:rune_gluttony"
+          },
+          "a": {
+            "item": "bountifulcurios:amulet_sin_empty"
+          },
+          "g": {
+            "item": "minecraft:golden_apple"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:amulet_sin_gluttony"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "c",
+          "a",
+          "g"
+        ],
+        "key": {
+          "c": {
+            "item": "minecraft:cake"
+          },
+          "a": {
+            "item": "bountifulcurios:amulet_sin_empty"
+          },
+          "g": {
+            "item": "minecraft:golden_apple"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:amulet_sin_gluttony"
+        }
+      }
+    }
+  ]
+}

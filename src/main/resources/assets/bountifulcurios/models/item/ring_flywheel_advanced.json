@@ -1,0 +1,32 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "bountifulcurios:item/ring_flywheel_advanced/stopped"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "bountifulcurios:charge": 0.00001
+      },
+      "model": "bountifulcurios:item/ring_flywheel_advanced_frametime_4"
+    },
+    {
+      "predicate": {
+        "bountifulcurios:charge": 0.125
+      },
+      "model": "bountifulcurios:item/ring_flywheel_advanced_frametime_2"
+    },
+    {
+      "predicate": {
+        "bountifulcurios:charge": 0.25
+      },
+      "model": "bountifulcurios:item/ring_flywheel_advanced_frametime_1"
+    },
+    {
+      "predicate": {
+        "bountifulcurios:charge": 0.5
+      },
+      "model": "bountifulcurios:item/ring_flywheel_advanced_frametime_half"
+    }
+  ]
+}

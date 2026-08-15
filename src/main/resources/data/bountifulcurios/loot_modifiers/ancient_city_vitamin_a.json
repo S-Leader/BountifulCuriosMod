@@ -1,0 +1,14 @@
+{
+  "type": "bountifulcurios:original_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ancient_city"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.05
+    }
+  ],
+  "pool": "ancient_city_vitamin_a"
+}

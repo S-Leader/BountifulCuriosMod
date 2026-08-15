@@ -1,0 +1,143 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:tag_empty",
+                "tag": "forge:ingots/cobalt"
+              }
+            },
+            {
+              "type": "forge:item_exists",
+              "item": "botania:rune_earth"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "sis",
+          "iSi",
+          "sRs"
+        ],
+        "key": {
+          "s": {
+            "item": "bountifulcurios:spectral_silt"
+          },
+          "i": {
+            "tag": "forge:ingots/cobalt"
+          },
+          "S": {
+            "item": "minecraft:shield"
+          },
+          "R": {
+            "item": "botania:rune_earth"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:shield_cobalt"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/cobalt"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "sis",
+          "iSi",
+          "sis"
+        ],
+        "key": {
+          "s": {
+            "item": "bountifulcurios:spectral_silt"
+          },
+          "i": {
+            "tag": "forge:ingots/cobalt"
+          },
+          "S": {
+            "item": "minecraft:shield"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:shield_cobalt"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "botania:rune_earth"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "sss",
+          "sSs",
+          "sRs"
+        ],
+        "key": {
+          "s": {
+            "item": "bountifulcurios:spectral_silt"
+          },
+          "S": {
+            "item": "minecraft:shield"
+          },
+          "R": {
+            "item": "botania:rune_earth"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:shield_cobalt"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "sss",
+          "sSs",
+          "sss"
+        ],
+        "key": {
+          "s": {
+            "item": "bountifulcurios:spectral_silt"
+          },
+          "S": {
+            "item": "minecraft:shield"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:shield_cobalt"
+        }
+      }
+    }
+  ]
+}

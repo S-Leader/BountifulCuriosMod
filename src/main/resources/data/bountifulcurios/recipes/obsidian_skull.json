@@ -1,0 +1,75 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "botania:rune_fire"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "oro",
+          "psp",
+          "odo"
+        ],
+        "key": {
+          "o": {
+            "item": "minecraft:obsidian"
+          },
+          "r": {
+            "item": "botania:rune_fire"
+          },
+          "d": {
+            "item": "minecraft:blaze_powder"
+          },
+          "s": {
+            "tag": "forge:heads"
+          },
+          "p": {
+            "item": "minecraft:magma_cream"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:obsidian_skull"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "odo",
+          "psp",
+          "odo"
+        ],
+        "key": {
+          "o": {
+            "item": "minecraft:obsidian"
+          },
+          "d": {
+            "item": "minecraft:blaze_powder"
+          },
+          "s": {
+            "tag": "forge:heads"
+          },
+          "p": {
+            "item": "minecraft:magma_cream"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:obsidian_skull"
+        }
+      }
+    }
+  ]
+}

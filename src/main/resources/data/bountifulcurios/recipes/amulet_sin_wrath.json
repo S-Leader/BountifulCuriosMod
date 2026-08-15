@@ -1,0 +1,72 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "botania:rune_wrath"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " r ",
+          " a ",
+          "tht"
+        ],
+        "key": {
+          "r": {
+            "item": "botania:rune_wrath"
+          },
+          "a": {
+            "item": "bountifulcurios:amulet_sin_empty"
+          },
+          "h": {
+            "tag": "forge:heads"
+          },
+          "t": {
+            "item": "minecraft:torchflower"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:amulet_sin_wrath"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " b ",
+          "bab",
+          "tht"
+        ],
+        "key": {
+          "b": {
+            "item": "minecraft:bone"
+          },
+          "a": {
+            "item": "bountifulcurios:amulet_sin_empty"
+          },
+          "h": {
+            "tag": "forge:heads"
+          },
+          "t": {
+            "item": "minecraft:torchflower"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:amulet_sin_wrath"
+        }
+      }
+    }
+  ]
+}

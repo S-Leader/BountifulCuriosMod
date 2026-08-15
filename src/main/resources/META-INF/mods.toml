@@ -1,0 +1,37 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "All Rights Reserved"
+issueTrackerURL = ""
+
+[[mods]]
+modId = "bountifulcurios"
+version = "1.0.0"
+displayName = "Bountiful Curios"
+authors = "keletu, Star_Artsy"
+description = '''
+Adds a variety of Curios accessories and other items inspired by Terraria and other games.
+'''
+
+[[mixins]]
+config = "bountifulcurios.mixins.json"
+
+[[dependencies.bountifulcurios]]
+modId = "forge"
+mandatory = true
+versionRange = "[47.2.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bountifulcurios]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bountifulcurios]]
+modId = "curios"
+mandatory = true
+versionRange = "[5.14.1,)"
+ordering = "AFTER"
+side = "BOTH"

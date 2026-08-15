@@ -1,0 +1,72 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/enderium"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "iei",
+          "pmp",
+          "ipi"
+        ],
+        "key": {
+          "i": {
+            "tag": "forge:ingots/enderium"
+          },
+          "e": {
+            "item": "minecraft:ender_eye"
+          },
+          "m": {
+            "item": "bountifulcurios:magic_mirror"
+          },
+          "p": {
+            "item": "bountifulcurios:potion_wormhole"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:wormhole_mirror"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " e ",
+          "pmp",
+          " p "
+        ],
+        "key": {
+          "e": {
+            "item": "minecraft:ender_eye"
+          },
+          "m": {
+            "item": "bountifulcurios:magic_mirror"
+          },
+          "p": {
+            "item": "bountifulcurios:potion_wormhole"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:wormhole_mirror"
+        }
+      }
+    }
+  ]
+}

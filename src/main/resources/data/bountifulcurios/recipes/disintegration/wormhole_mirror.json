@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bountifulcurios",
+  "ingredients": [
+    {
+      "item": "bountifulcurios:wormhole_mirror"
+    },
+    {
+      "item": "bountifulcurios:disintegration_tablet"
+    }
+  ],
+  "result": {
+    "item": "bountifulcurios:spectral_silt",
+    "count": 2
+  }
+}

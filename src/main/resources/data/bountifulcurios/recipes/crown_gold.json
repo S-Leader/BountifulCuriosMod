@@ -1,0 +1,63 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:gems/ruby"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " r ",
+          "ggg",
+          "g g"
+        ],
+        "key": {
+          "g": {
+            "tag": "forge:ingots/gold"
+          },
+          "r": {
+            "tag": "forge:gems/ruby"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:crown_gold"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " d ",
+          "ggg",
+          "g g"
+        ],
+        "key": {
+          "g": {
+            "tag": "forge:ingots/gold"
+          },
+          "d": {
+            "tag": "forge:gems/diamond"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:crown_gold"
+        }
+      }
+    }
+  ]
+}

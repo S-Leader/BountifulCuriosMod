@@ -1,0 +1,62 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "botania:rune_pride"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "r",
+          "a",
+          "c"
+        ],
+        "key": {
+          "r": {
+            "item": "botania:rune_pride"
+          },
+          "a": {
+            "item": "bountifulcurios:amulet_sin_empty"
+          },
+          "c": {
+            "item": "bountifulcurios:crown_gold"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:amulet_sin_pride"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "a",
+          "c"
+        ],
+        "key": {
+          "a": {
+            "item": "bountifulcurios:amulet_sin_empty"
+          },
+          "c": {
+            "item": "bountifulcurios:crown_gold"
+          }
+        },
+        "result": {
+          "item": "bountifulcurios:amulet_sin_pride"
+        }
+      }
+    }
+  ]
+}
