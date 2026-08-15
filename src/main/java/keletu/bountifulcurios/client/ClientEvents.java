@@ -17,7 +17,7 @@ import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 public final class ClientEvents {
     private static final ResourceLocation BLOCKING = new ResourceLocation("blocking");
     private static final ResourceLocation USING = new ResourceLocation("using");
-    private static final ResourceLocation CHARGE = new ResourceLocation("charge");
+    private static final ResourceLocation CHARGE = new ResourceLocation(BountifulCurios.MODID, "charge");
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
