@@ -3,14 +3,13 @@
   "group": "bountifulcurios",
   "ingredients": [
     {
-      "item": "bountifulcurios:mixed_dragon_scale"
+      "tag": "bountifulcurios:disintegratable"
     },
     {
       "item": "bountifulcurios:disintegration_tablet"
     }
   ],
   "result": {
-    "item": "bountifulcurios:spectral_silt",
-    "count": 2
+    "item": "bountifulcurios:spectral_silt"
   }
 }

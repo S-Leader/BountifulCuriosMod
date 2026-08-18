@@ -1,21 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "i",
-    "p",
-    "l"
-  ],
-  "key": {
-    "i": {
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
       "tag": "forge:ingots/copper"
     },
-    "p": {
+    {
       "item": "minecraft:gunpowder"
     },
-    "l": {
-      "item": "minecraft:glowstone_dust"
+    {
+      "item": "bountifulcurios:spectral_silt"
     }
-  },
+  ],
   "result": {
     "item": "bountifulcurios:flare_red",
     "count": 8

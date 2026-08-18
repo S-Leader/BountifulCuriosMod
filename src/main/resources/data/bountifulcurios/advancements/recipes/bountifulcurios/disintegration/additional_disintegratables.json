@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "bountifulcurios:disintegration/apple",
+      "bountifulcurios:disintegration/vitamins",
+      "bountifulcurios:disintegration/vitamins_a",
+      "bountifulcurios:disintegration/vitamins_alpha",
+      "bountifulcurios:disintegration/ring_overclocking",
+      "bountifulcurios:disintegration/shulker_heart",
+      "bountifulcurios:disintegration/bezoar",
+      "bountifulcurios:disintegration/ring_free_action",
+      "bountifulcurios:disintegration/horseshoe_balloon",
+      "bountifulcurios:disintegration/flare_gun",
+      "bountifulcurios:disintegration/flare_red"
+    ]
+  },
+  "criteria": {
+    "disintegrationTablet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "bountifulcurios:disintegration_tablet"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "disintegrationTablet"
+    ]
+  ]
+}

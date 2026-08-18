@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bountifulcurios",
+  "ingredients": [
+    {
+      "item": "bountifulcurios:flare_red"
+    },
+    {
+      "item": "bountifulcurios:flare_red"
+    },
+    {
+      "item": "bountifulcurios:flare_red"
+    },
+    {
+      "item": "bountifulcurios:flare_red"
+    },
+    {
+      "item": "bountifulcurios:flare_red"
+    },
+    {
+      "item": "bountifulcurios:flare_red"
+    },
+    {
+      "item": "bountifulcurios:flare_red"
+    },
+    {
+      "item": "bountifulcurios:flare_red"
+    },
+    {
+      "item": "bountifulcurios:disintegration_tablet"
+    }
+  ],
+  "result": {
+    "item": "bountifulcurios:spectral_silt"
+  }
+}
