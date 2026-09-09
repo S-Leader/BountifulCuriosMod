@@ -1,11 +1,13 @@
 package keletu.bountifulcurios.client;
 
 import keletu.bountifulcurios.BountifulCurios;
+import keletu.bountifulcurios.registry.ModEntities;
 import keletu.bountifulcurios.registry.ModItems;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.energy.IEnergyStorage;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -18,6 +20,16 @@ public final class ClientEvents {
     private static final ResourceLocation BLOCKING = new ResourceLocation("blocking");
     private static final ResourceLocation USING = new ResourceLocation("using");
     private static final ResourceLocation CHARGE = new ResourceLocation(BountifulCurios.MODID, "charge");
+
+    @SubscribeEvent
+    public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(ModEntities.FLARE.get(), FlareRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(FlareModel.LAYER_LOCATION, FlareModel::createBodyLayer);
+    }
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {

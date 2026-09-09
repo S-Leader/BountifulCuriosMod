@@ -8,8 +8,6 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.Level;
 
-import java.util.Comparator;
-
 public final class TeleportUtil {
     public static boolean teleportToSpawn(ServerPlayer player) {
         ResourceKey<Level> dimension = player.getRespawnDimension();
@@ -30,32 +28,10 @@ public final class TeleportUtil {
         return true;
     }
 
-    public static boolean teleportToAnotherPlayer(ServerPlayer player) {
-        ServerPlayer target = player.server.getPlayerList().getPlayers().stream()
-                .filter(candidate -> candidate != player)
-                .min(Comparator.comparingDouble(player::distanceToSqr))
-                .orElse(null);
-        if (target == null) {
-            player.displayClientMessage(ComponentKeys.NO_TARGET, true);
-            return false;
-        }
-        player.stopRiding();
-        player.teleportTo(target.serverLevel(), target.getX(), target.getY(), target.getZ(),
-                player.getYRot(), player.getXRot());
-        finishTeleport(player);
-        return true;
-    }
-
     private static void finishTeleport(ServerPlayer player) {
         player.fallDistance = 0.0F;
         player.level().playSound(null, player.blockPosition(), SoundEvents.ENDERMAN_TELEPORT,
                 SoundSource.PLAYERS, 1.0F, 1.0F);
-    }
-
-    private static final class ComponentKeys {
-        private static final net.minecraft.network.chat.Component NO_TARGET =
-                net.minecraft.network.chat.Component.translatable(
-                        "item.bountifulcurios.potion_wormhole.nootherplayers");
     }
 
     private TeleportUtil() {

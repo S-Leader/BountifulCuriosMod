@@ -1,5 +1,6 @@
 package keletu.bountifulcurios.item;
 
+import keletu.bountifulcurios.wormhole.WormholeTeleportManager;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
@@ -27,7 +28,10 @@ public class MirrorItem extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        if (destination == Destination.OTHER_PLAYER && !hasAnotherPlayer(player)) {
+        boolean wantsOtherPlayer = destination == Destination.OTHER_PLAYER
+                || destination == Destination.SPAWN_OR_OTHER_WHEN_CROUCHING
+                && player.isCrouching();
+        if (wantsOtherPlayer && !hasAnotherPlayer(player)) {
             player.displayClientMessage(Component.translatable("item.bountifulcurios.potion_wormhole.nootherplayers"), true);
             return InteractionResultHolder.fail(player.getItemInHand(hand));
         }
@@ -39,7 +43,11 @@ public class MirrorItem extends Item {
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
         if (entity instanceof ServerPlayer player) {
             boolean toOther = destination == Destination.OTHER_PLAYER || (destination == Destination.SPAWN_OR_OTHER_WHEN_CROUCHING && player.isCrouching());
-            boolean teleported = toOther ? TeleportUtil.teleportToAnotherPlayer(player) : TeleportUtil.teleportToSpawn(player);
+            if (toOther) {
+                WormholeTeleportManager.openSelection(player);
+                return stack;
+            }
+            boolean teleported = TeleportUtil.teleportToSpawn(player);
             if (teleported && !reusable && !player.getAbilities().instabuild) {
                 stack.shrink(1);
                 if (stack.isEmpty()) {
@@ -54,7 +62,8 @@ public class MirrorItem extends Item {
     }
 
     private boolean hasAnotherPlayer(Player player) {
-        return !(player instanceof ServerPlayer serverPlayer) || serverPlayer.server.getPlayerList().getPlayerCount() > 1;
+        return !(player instanceof ServerPlayer serverPlayer)
+                || WormholeTeleportManager.hasTarget(serverPlayer);
     }
 
     @Override
