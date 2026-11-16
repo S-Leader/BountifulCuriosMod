@@ -1,0 +1,29 @@
+import net.neoforged.nfrtgradle.NeoFormRuntimeTask
+
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+group = 'keletu.bountifulcurios'
+version = '26.1.2-1.1.2'
+base { archivesName = 'bountifulcurios' }
+java { toolchain.languageVersion = JavaLanguageVersion.of(25); withSourcesJar() }
+repositories { maven { url = 'https://maven.theillusivec4.top' } }
+neoForge {
+    version = '26.1.2.126'
+    mods { bountifulcurios { sourceSet sourceSets.main } }
+    runs {
+        client { client(); gameDirectory = file('run/client') }
+        server { server(); programArgument '--nogui'; gameDirectory = file('run/server') }
+    }
+}
+dependencies { implementation 'top.theillusivec4.curios:curios-neoforge:15.0.0+26.1.2' }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.compilerArgs += ['-proc:none'] }
+tasks.named('jar') {
+    from('LICENSE')
+    manifest { attributes 'Implementation-Version': project.version, 'MixinConfigs': 'bountifulcurios.mixins.json' }
+}
+tasks.named('sourcesJar') { from('LICENSE', 'README.md') }
+tasks.withType(NeoFormRuntimeTask).configureEach {
+    javaExecutable = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(25) }.map { it.executablePath.asFile.absolutePath }
+}

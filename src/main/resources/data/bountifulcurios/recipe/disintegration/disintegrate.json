@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bountifulcurios",
+  "ingredients": [
+    "#bountifulcurios:disintegratable",
+    "bountifulcurios:disintegration_tablet"
+  ],
+  "result": {
+    "id": "bountifulcurios:spectral_silt"
+  }
+}

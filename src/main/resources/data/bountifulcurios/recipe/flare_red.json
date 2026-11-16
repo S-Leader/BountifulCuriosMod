@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#c:ingots/copper",
+    "minecraft:gunpowder",
+    "bountifulcurios:spectral_silt"
+  ],
+  "result": {
+    "count": 8,
+    "id": "bountifulcurios:flare_red"
+  }
+}

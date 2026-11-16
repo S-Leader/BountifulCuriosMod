@@ -1,0 +1,57 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ingredient": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bountifulcurios:spectral_silt"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "bountifulcurios:spectral_silt/balloon_fallback_1"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ingredient",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bountifulcurios:spectral_silt/balloon_fallback_1"
+    ]
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:always"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "neoforge:and",
+            "values": [
+              {
+                "type": "neoforge:registered",
+                "registry": "minecraft:item",
+                "value": "botania:rune_air"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

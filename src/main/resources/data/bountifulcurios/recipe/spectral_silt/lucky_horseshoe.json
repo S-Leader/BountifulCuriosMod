@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "gsg",
+    "EsA",
+    "sgs"
+  ],
+  "key": {
+    "s": "bountifulcurios:spectral_silt",
+    "g": "#c:ingots/gold",
+    "E": "botania:rune_earth",
+    "A": "botania:rune_air"
+  },
+  "result": {
+    "id": "bountifulcurios:lucky_horseshoe"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:registered",
+          "registry": "minecraft:item",
+          "value": "botania:rune_earth"
+        },
+        {
+          "type": "neoforge:registered",
+          "registry": "minecraft:item",
+          "value": "botania:rune_air"
+        }
+      ]
+    }
+  ]
+}

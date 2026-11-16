@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "c",
+    "a",
+    "g"
+  ],
+  "key": {
+    "c": "botania:rune_gluttony",
+    "a": "bountifulcurios:amulet_sin_empty",
+    "g": "minecraft:golden_apple"
+  },
+  "result": {
+    "id": "bountifulcurios:amulet_sin_gluttony"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:registered",
+      "registry": "minecraft:item",
+      "value": "botania:rune_gluttony"
+    }
+  ]
+}

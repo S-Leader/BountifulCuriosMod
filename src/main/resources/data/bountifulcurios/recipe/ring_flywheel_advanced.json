@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " s ",
+    "iri",
+    " e "
+  ],
+  "key": {
+    "i": "#c:ingots/enderium",
+    "r": "bountifulcurios:ring_flywheel",
+    "s": "#c:scales/ender_dragon",
+    "e": "minecraft:ender_eye"
+  },
+  "result": {
+    "id": "bountifulcurios:ring_flywheel_advanced"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "forge:ingots/enderium"
+      }
+    }
+  ]
+}

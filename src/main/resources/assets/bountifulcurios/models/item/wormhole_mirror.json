@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "bountifulcurios:item/wormhole_mirror"
+  }
+}

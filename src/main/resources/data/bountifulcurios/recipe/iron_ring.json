@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    "ibi",
+    " i "
+  ],
+  "key": {
+    "i": "#c:ingots/iron",
+    "b": "minecraft:bowl"
+  },
+  "result": {
+    "id": "bountifulcurios:iron_ring"
+  }
+}

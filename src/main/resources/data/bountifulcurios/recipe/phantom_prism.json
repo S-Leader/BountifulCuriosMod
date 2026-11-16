@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " e ",
+    "gdg",
+    "gog"
+  ],
+  "key": {
+    "e": "minecraft:ender_eye",
+    "d": "#c:gems/diamond",
+    "g": "#c:glass_blocks",
+    "o": "#c:obsidians"
+  },
+  "result": {
+    "id": "bountifulcurios:phantom_prism"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "botania"
+      }
+    }
+  ]
+}

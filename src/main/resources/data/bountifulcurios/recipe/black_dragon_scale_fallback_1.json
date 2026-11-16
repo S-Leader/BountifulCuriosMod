@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "n",
+    "e",
+    "b"
+  ],
+  "key": {
+    "n": "minecraft:nether_star",
+    "e": "#c:scales/ender_dragon",
+    "b": "bountifulcurios:broken_black_dragon_scale"
+  },
+  "result": {
+    "id": "bountifulcurios:black_dragon_scale"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:always"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "neoforge:and",
+            "values": [
+              {
+                "type": "neoforge:registered",
+                "registry": "minecraft:item",
+                "value": "botania:life_essence"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

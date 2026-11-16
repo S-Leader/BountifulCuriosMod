@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "r",
+    "a",
+    "c"
+  ],
+  "key": {
+    "r": "botania:rune_pride",
+    "a": "bountifulcurios:amulet_sin_empty",
+    "c": "bountifulcurios:crown_gold"
+  },
+  "result": {
+    "id": "bountifulcurios:amulet_sin_pride"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:registered",
+      "registry": "minecraft:item",
+      "value": "botania:rune_pride"
+    }
+  ]
+}

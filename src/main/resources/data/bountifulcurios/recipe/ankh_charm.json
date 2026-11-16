@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SlA",
+    "fsa",
+    "PvW"
+  ],
+  "key": {
+    "s": "bountifulcurios:mixed_dragon_scale",
+    "f": "bountifulcurios:ring_free_action",
+    "a": "bountifulcurios:apple",
+    "v": "bountifulcurios:vitamins_alpha",
+    "l": "bountifulcurios:sunglasses",
+    "S": "botania:rune_summer",
+    "A": "botania:rune_autumn",
+    "W": "botania:rune_winter",
+    "P": "botania:rune_spring"
+  },
+  "result": {
+    "id": "bountifulcurios:ankh_charm"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:registered",
+          "registry": "minecraft:item",
+          "value": "botania:rune_summer"
+        },
+        {
+          "type": "neoforge:registered",
+          "registry": "minecraft:item",
+          "value": "botania:rune_autumn"
+        },
+        {
+          "type": "neoforge:registered",
+          "registry": "minecraft:item",
+          "value": "botania:rune_winter"
+        },
+        {
+          "type": "neoforge:registered",
+          "registry": "minecraft:item",
+          "value": "botania:rune_spring"
+        }
+      ]
+    }
+  ]
+}

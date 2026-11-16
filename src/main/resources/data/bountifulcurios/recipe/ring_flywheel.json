@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "scs",
+    "crc",
+    "scs"
+  ],
+  "key": {
+    "c": "#c:ingots/copper",
+    "s": "#c:ingots/steel",
+    "r": "bountifulcurios:iron_ring"
+  },
+  "result": {
+    "id": "bountifulcurios:ring_flywheel"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "forge:ingots/steel"
+      }
+    }
+  ]
+}

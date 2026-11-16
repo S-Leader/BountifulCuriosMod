@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " b ",
+    "bab",
+    "tht"
+  ],
+  "key": {
+    "b": "minecraft:bone",
+    "a": "bountifulcurios:amulet_sin_empty",
+    "h": "#c:skulls",
+    "t": "minecraft:torchflower"
+  },
+  "result": {
+    "id": "bountifulcurios:amulet_sin_wrath"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:always"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "neoforge:and",
+            "values": [
+              {
+                "type": "neoforge:registered",
+                "registry": "minecraft:item",
+                "value": "botania:rune_wrath"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

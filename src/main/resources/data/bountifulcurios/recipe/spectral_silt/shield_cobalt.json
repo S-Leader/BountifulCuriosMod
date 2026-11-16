@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "sis",
+    "iSi",
+    "sRs"
+  ],
+  "key": {
+    "s": "bountifulcurios:spectral_silt",
+    "i": "#c:ingots/cobalt",
+    "S": "minecraft:shield",
+    "R": "botania:rune_earth"
+  },
+  "result": {
+    "id": "bountifulcurios:shield_cobalt"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "forge:ingots/cobalt"
+          }
+        },
+        {
+          "type": "neoforge:registered",
+          "registry": "minecraft:item",
+          "value": "botania:rune_earth"
+        }
+      ]
+    }
+  ]
+}

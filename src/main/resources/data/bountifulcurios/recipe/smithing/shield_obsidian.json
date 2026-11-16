@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "bountifulcurios:resplendent_token",
+  "base": "bountifulcurios:shield_cobalt",
+  "addition": "bountifulcurios:obsidian_skull",
+  "result": {
+    "id": "bountifulcurios:shield_obsidian"
+  }
+}

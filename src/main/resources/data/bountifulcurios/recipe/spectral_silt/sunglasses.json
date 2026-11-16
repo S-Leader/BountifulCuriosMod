@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "s s",
+    "gSg",
+    "s s"
+  ],
+  "key": {
+    "s": "bountifulcurios:spectral_silt",
+    "g": "#c:glass_blocks",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "bountifulcurios:sunglasses"
+  }
+}

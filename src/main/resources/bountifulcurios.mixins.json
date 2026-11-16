@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "keletu.bountifulcurios.mixins",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "PowderSnowBlockMixin",
+    "WebBlockMixin",
+    "TrialSpawnerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

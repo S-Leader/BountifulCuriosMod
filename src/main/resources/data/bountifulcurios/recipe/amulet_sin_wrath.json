@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " r ",
+    " a ",
+    "tht"
+  ],
+  "key": {
+    "r": "botania:rune_wrath",
+    "a": "bountifulcurios:amulet_sin_empty",
+    "h": "#c:skulls",
+    "t": "minecraft:torchflower"
+  },
+  "result": {
+    "id": "bountifulcurios:amulet_sin_wrath"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:registered",
+      "registry": "minecraft:item",
+      "value": "botania:rune_wrath"
+    }
+  ]
+}

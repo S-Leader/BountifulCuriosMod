@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bountifulcurios",
+  "pattern": [
+    " s ",
+    "sgs",
+    " s "
+  ],
+  "key": {
+    "s": "bountifulcurios:spectral_silt",
+    "g": "minecraft:gold_ingot"
+  },
+  "result": {
+    "id": "bountifulcurios:resplendent_token"
+  }
+}

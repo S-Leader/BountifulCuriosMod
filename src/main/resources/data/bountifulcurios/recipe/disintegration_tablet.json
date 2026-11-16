@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bountifulcurios",
+  "pattern": [
+    "qbq",
+    "brb",
+    "qbq"
+  ],
+  "key": {
+    "q": "minecraft:quartz",
+    "r": "minecraft:redstone",
+    "b": "minecraft:blaze_powder"
+  },
+  "result": {
+    "id": "bountifulcurios:disintegration_tablet"
+  }
+}

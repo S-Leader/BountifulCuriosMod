@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "sgs",
+    "ggg",
+    "sgs"
+  ],
+  "key": {
+    "s": "bountifulcurios:spectral_silt",
+    "g": "#c:ingots/gold"
+  },
+  "result": {
+    "id": "bountifulcurios:amulet_cross"
+  }
+}

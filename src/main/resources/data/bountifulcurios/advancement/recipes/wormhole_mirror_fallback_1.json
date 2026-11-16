@@ -1,0 +1,59 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ingredient": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:ender_eye"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "bountifulcurios:wormhole_mirror_fallback_1"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ingredient",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bountifulcurios:wormhole_mirror_fallback_1"
+    ]
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:always"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "neoforge:and",
+            "values": [
+              {
+                "type": "neoforge:not",
+                "value": {
+                  "type": "neoforge:tag_empty",
+                  "tag": "forge:ingots/enderium"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

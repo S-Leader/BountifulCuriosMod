@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "bountifulcurios:resplendent_token",
+  "base": "bountifulcurios:balloon",
+  "addition": "bountifulcurios:lucky_horseshoe",
+  "result": {
+    "id": "bountifulcurios:horseshoe_balloon"
+  }
+}

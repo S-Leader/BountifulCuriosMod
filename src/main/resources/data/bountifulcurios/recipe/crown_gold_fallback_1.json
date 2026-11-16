@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " d ",
+    "ggg",
+    "g g"
+  ],
+  "key": {
+    "g": "#c:ingots/gold",
+    "d": "#c:gems/diamond"
+  },
+  "result": {
+    "id": "bountifulcurios:crown_gold"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:always"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "neoforge:and",
+            "values": [
+              {
+                "type": "neoforge:not",
+                "value": {
+                  "type": "neoforge:tag_empty",
+                  "tag": "forge:gems/ruby"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "bountifulcurios:resplendent_token",
+  "base": "bountifulcurios:vitamins",
+  "addition": "bountifulcurios:vitamins_a",
+  "result": {
+    "id": "bountifulcurios:vitamins_alpha"
+  }
+}

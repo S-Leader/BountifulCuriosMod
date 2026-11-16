@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "odo",
+    "psp",
+    "odo"
+  ],
+  "key": {
+    "o": "minecraft:obsidian",
+    "d": "minecraft:blaze_powder",
+    "s": "#c:skulls",
+    "p": "minecraft:magma_cream"
+  },
+  "result": {
+    "id": "bountifulcurios:obsidian_skull"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:always"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "neoforge:and",
+            "values": [
+              {
+                "type": "neoforge:registered",
+                "registry": "minecraft:item",
+                "value": "botania:rune_fire"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

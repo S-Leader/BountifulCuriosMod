@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " e ",
+    "nbg"
+  ],
+  "key": {
+    "n": "minecraft:nether_star",
+    "e": "#c:scales/ender_dragon",
+    "b": "bountifulcurios:broken_black_dragon_scale",
+    "g": "botania:life_essence"
+  },
+  "result": {
+    "id": "bountifulcurios:black_dragon_scale"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:registered",
+      "registry": "minecraft:item",
+      "value": "botania:life_essence"
+    }
+  ]
+}

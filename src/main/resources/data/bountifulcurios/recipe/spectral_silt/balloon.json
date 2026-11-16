@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "sws",
+    "wRw",
+    "sws"
+  ],
+  "key": {
+    "s": "bountifulcurios:spectral_silt",
+    "w": "#minecraft:wool",
+    "R": "botania:rune_air"
+  },
+  "result": {
+    "id": "bountifulcurios:balloon"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:registered",
+      "registry": "minecraft:item",
+      "value": "botania:rune_air"
+    }
+  ]
+}

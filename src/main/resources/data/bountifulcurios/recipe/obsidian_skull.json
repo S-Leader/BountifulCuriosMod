@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "oro",
+    "psp",
+    "odo"
+  ],
+  "key": {
+    "o": "minecraft:obsidian",
+    "r": "botania:rune_fire",
+    "d": "minecraft:blaze_powder",
+    "s": "#c:skulls",
+    "p": "minecraft:magma_cream"
+  },
+  "result": {
+    "id": "bountifulcurios:obsidian_skull"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:registered",
+      "registry": "minecraft:item",
+      "value": "botania:rune_fire"
+    }
+  ]
+}

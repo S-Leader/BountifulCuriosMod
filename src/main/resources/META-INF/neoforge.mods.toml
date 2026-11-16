@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "bountifulcurios"
+version = "26.1.2-1.1.2"
+displayName = "Bountiful Curios"
+authors = "keletu, Star_Artsy, Kettle5000"
+description = "Curios accessories inspired by Terraria and other games, ported to NeoForge 26.1.2."
+
+[[mixins]]
+config = "bountifulcurios.mixins.json"
+
+[[dependencies.bountifulcurios]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.1.2]"
+side = "BOTH"
+
+[[dependencies.bountifulcurios]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.1.2.126,26.2)"
+side = "BOTH"
+
+[[dependencies.bountifulcurios]]
+modId = "curios"
+type = "required"
+versionRange = "[15.0.0,16)"
+ordering = "AFTER"
+side = "BOTH"
