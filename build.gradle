@@ -5,7 +5,7 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.148'
 }
 group = 'keletu.bountifulcurios'
-version = '26.1.2-1.1.2'
+version = '26.1.2-1.1.3'
 base { archivesName = 'bountifulcurios' }
 java { toolchain.languageVersion = JavaLanguageVersion.of(25); withSourcesJar() }
 repositories { maven { url = 'https://maven.theillusivec4.top' } }
