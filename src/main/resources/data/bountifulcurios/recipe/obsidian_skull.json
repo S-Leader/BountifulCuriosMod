@@ -10,7 +10,7 @@
     "o": "minecraft:obsidian",
     "r": "botania:rune_fire",
     "d": "minecraft:blaze_powder",
-    "s": "#c:skulls",
+    "s": "#minecraft:skulls",
     "p": "minecraft:magma_cream"
   },
   "result": {

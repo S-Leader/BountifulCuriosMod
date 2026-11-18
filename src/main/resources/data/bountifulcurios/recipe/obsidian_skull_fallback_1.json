@@ -9,7 +9,7 @@
   "key": {
     "o": "minecraft:obsidian",
     "d": "minecraft:blaze_powder",
-    "s": "#c:skulls",
+    "s": "#minecraft:skulls",
     "p": "minecraft:magma_cream"
   },
   "result": {
